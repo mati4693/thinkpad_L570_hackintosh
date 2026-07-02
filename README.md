@@ -11,9 +11,9 @@ In the EFI folder, i have three different EFI's with different purposes.</br>
 In the "hackintosh" folder, i have included all the tools and files i used to create the EFI's.</br>
 
 # EFI explanations
-L570_EFI: only macOS 10.15</br>
-L570_EFI_no_acpi: macOS 10.15 where ACPI files load later, so other os'es (such as Windows 11) aren't disturbed</br>
-L570_DUAL_EFI: the compounded EFI of Windows 11 EFI and macOS 10.15 EFI</br>
+<li>L570_EFI: only macOS 10.15</br>
+<li>L570_EFI_no_acpi (based on no_acpi_opencore): macOS 10.15 where ACPI files load later, so other os'es (such as Windows 11) aren't disturbed</br>
+<li>L570_DUAL_EFI: the compounded EFI of Windows 11 EFI and macOS 10.15 EFI</br>
 (L570_DUAL_EFI: run this command on windows host: "bcdedit /set {bootmgr} path \efi\boot\bootx64.efi" to tell windows where to boot from)</br>
 
 # BIOS settings
