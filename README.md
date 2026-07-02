@@ -59,10 +59,12 @@ If you want to use a newer macOS, then you would have to grab a newer version of
 If you're just running macOS alone, then you have to pick L570_EFI.</br>
 
 If you're trying to dual boot Windows 11 and macOS, then you would need to pick L570_DUAL_EFI, which is a compounded version of the Windows 11 EFI and the macOS EFI.</br>
-To prepare the Windows 11 system, you would have to run this command as admin: "bcdedit /set {bootmgr} path \efi\boot\bootx64.efi" to tell Windows where to boot from.</br>
+To prepare the Windows 11 system, you would have to run this command as admin: </br>
+"bcdedit /set {bootmgr} path \efi\boot\bootx64.efi" to tell Windows where to boot from.</br>
 
 If you want to boot macOS and a different OS (Windows 10 or Linux), then you need to grab the L570_EFI_no_acpi and merge the EFI of the other OS.</br>
-If you're using Windows 10, then you would also have to run the aforementioned command: "bcdedit /set {bootmgr} path \efi\boot\bootx64.efi".</br>
+If you're using Windows 10, then you would also have to run the aforementioned command: </br>
+"bcdedit /set {bootmgr} path \efi\boot\bootx64.efi".</br>
 
 When done installing both OS'es, change the config.plist (using OpenCore configurator on Mac) in the EFI partition accordingly: </br>
 Misc -> Boot -> LauncherOption: Full</br>
