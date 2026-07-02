@@ -22,7 +22,6 @@ Secure Boot -> OFF</br>
 TPM 2 -> ACTIVE</br>
 Advanced/Boot options/Fast Boot -> OFF</br>
 Advanced/System options/VTd -> OFF</br>
-Advanced/System options/DMA -> OFF</br>
 
 # Functionalities
 BATTERY STATUS: YES</br>
@@ -65,7 +64,8 @@ To prepare the Windows 11 system, you would have to run this command as admin: "
 If you want to boot macOS and a different OS (Windows 10 or Linux), then you need to grab the L570_EFI_no_acpi and merge the EFI of the other OS.</br>
 If you're using Windows 10, then you would also have to run the aforementioned command: "bcdedit /set {bootmgr} path \efi\boot\bootx64.efi".</br>
 
-When done installing both OS'es, change the config.plist (using OpenCore configurator on Mac) in the EFI partition accordingly: Misc -> Boot -> LauncherOption: Full</br>
+When done installing both OS'es, change the config.plist (using OpenCore configurator on Mac) in the EFI partition accordingly: </br>
+Misc -> Boot -> LauncherOption: Full</br>
 This ensures better stability between Windows and macOS.</br>
 
 One important note: ONE EFI partition has to be present on the disk, not two, even though there are two OS'es.</br>
